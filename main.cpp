@@ -15,15 +15,10 @@
  */
 
 
-#include <iostream>/*{{{*/
-#include <iomanip>
+#include <iostream>
 #include <string>
-#include <stdlib.h>
 
 #include "parser.h"
-
-//#define VERBOSE		  // if defined, parse(string) will print out every string it 
-			  // receives and the result it computes for that string
 
 using std::string;
 using std::cin;
@@ -31,7 +26,7 @@ using std::cout;
 using std::endl;
 
 // a preprocessor which removes whitespace and make all char to lower and interprets 'ans'
-extern void clean_input( string & , long double ans );
+void clean_input( string & , long double ans );
 
 void clearAll();
 

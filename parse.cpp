@@ -3,6 +3,9 @@
 #include <vector>
 #include <cmath>
 
+//#define VERBOSE		  // if defined, parse(string) will print out every string it 
+			  // receives and the result it computes for that string
+
 using std::vector;
 
 // exceptions/*{{{*/
