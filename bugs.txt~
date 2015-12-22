@@ -1,6 +1,0 @@
-# BUGS
-## Running log of bugs and fixes
-### Date            Description
-Fri Dec 18      [FIXED] ans doesnt work, imprecise and wrong
-                [FIXED] "ans + ans", "ans+ ans", "ans +ans", result in syntax error, but "ans+ans" does not,
-likely in clean_input()
