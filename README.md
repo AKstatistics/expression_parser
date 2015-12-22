@@ -16,4 +16,9 @@ I will soon improve the interface to allow the arrow keys for line editing and r
 ## Use of this code
 I publish this code in the hopes that anyone else interested in parsing expressions or tty programming or make, might learn from this code and share their successes and improvements with me. I simply ask that proper credit is attributed for use or modification of this code, and that the aspects that are original or modified are clearly represented as such in the sources. I will try to improve the code, comments, and documentation as I have time. Message me if you happen to use it and let me know what you think. Thanks!
 
+## Build
 
+Navigate to the containing folder. Run *make calc*. Now you can run *./calc* and launch the calculator.
+
+If you only run *make* you will instead build *./calc_test_build* which is identical to the other. 
+I just have two targets so that I can change the code and build it without messing up the working binary of the program.

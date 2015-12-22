@@ -10,6 +10,8 @@ OBJECTS=$(SOURCES:.cpp=.o)
 calc_test_build: $(OBJECTS)
 	$(CC) $(OBJECTS) -o $@
 
+calc : $(OBJECTS)
+	$(CC) $(OBJECTS) -o calc
 
 main.o : main.cpp parser.h clean_input.cpp
 	$(CC) $(CFLAGS) main.cpp
@@ -28,12 +30,6 @@ parse_hex.o : parse_hex.cpp common_parse_includes.h
 
 clean_input.o : clean_input.cpp common_parse_includes.h
 	$(CC) $(CFLAGS) clean_input.cpp
-
-
-.PHONY : release
-
-release : $(OBJECTS)
-	$(CC) $(OBJECTS) -o calc
 
 .PHONY : clean
 
