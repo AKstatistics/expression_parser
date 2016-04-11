@@ -73,6 +73,7 @@ bool isDigit(const char & sym)/*{{{*/
 	return false;
 }/*}}}*/
 
+// returns the value of the math expression, expr, according to PEMDAS
 long double parse(string expr)/*{{{*/
 {
 	static int count = 0;/*{{{*/
@@ -477,6 +478,7 @@ long double parse(string expr)/*{{{*/
 }
 /*}}}*/
 
+// Notes I wrote while coding, these may not perfectly reflect the implementation
 /* each char is: {{{
  * 		- a digit 0123456789, possibly belonging to a longer number 
  *		- a binary op, + - * / ^
