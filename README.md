@@ -47,6 +47,8 @@ Some annoying things:
 ## Use of this code
 I publish this code in the hopes that anyone else interested in parsing expressions or tty programming or make, might learn from this code and share their successes and improvements with me. I simply ask that proper credit is attributed for use or modification of this code, and that the aspects that are original or modified are clearly represented as such in the sources. I will try to improve the code, comments, and documentation as I have time. If you happen to use it, I welcome a message about it. Thanks!
 
+If you just want to use and play with my parse functions without the CLI, simply add all the *.cpp* files to your project except for *main.cpp*. Then include *parser.h* to use the parser functions.
+
 ## Build
 
 Navigate to the containing folder. Run *make calc*. Now you can run *./calc* and launch the calculator.
