@@ -15,6 +15,7 @@ The principal behind the recursive parser is simple:
 - Each higher level of recusion parses the next highest precedence operation. 
 
 For example, say we parse "4 + 5 * (1 + 2)"
+
 1. Find all terms separated by + or - and call parse on each term, return value of sum.
 
         "4", "5 * (1 + 2)"
